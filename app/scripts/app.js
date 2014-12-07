@@ -20,7 +20,9 @@
     'ui.sortable',
     'LocalStorageModule',
     'mytodoAppCtrls',
-    'mytodoAppServices'
+    'mytodoAppServices',
+    'mytodoAppAboutCtrl',
+    'mytodoAppDirectives'
   ]);
 
   mytodoApp.config(['localStorageServiceProvider',function(localStorageServiceProvider){

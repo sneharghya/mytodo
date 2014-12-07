@@ -9,7 +9,7 @@
  */
 var mytodoAppServices = angular.module('mytodoAppServices',[]);
 
-  mytodoAppServices.factory('todoService', function (localStorageService) {
+  mytodoAppServices.factory('todoService',['localStorageService', function (localStorageService) {
     // AngularJS will instantiate a singleton by calling "new" on this function
     var todoServiceObj = {};
     var todosInLocalStorage = localStorageService.get('todos');
@@ -32,4 +32,4 @@ var mytodoAppServices = angular.module('mytodoAppServices',[]);
 	};
 
     return todoServiceObj;
-  });
+  }]);

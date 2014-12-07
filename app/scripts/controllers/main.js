@@ -9,7 +9,7 @@
  */
 var mytodoAppCtrls = angular.module('mytodoAppCtrls',[]);
 
-mytodoAppCtrls.controller('MainCtrl',function($scope,localStorageService,todoService){
+mytodoAppCtrls.controller('MainCtrl',['$scope','localStorageService','todoService',function($scope,localStorageService,todoService){
 	//var todosInLocalStorage = localStorageService.get('todos');
 	//$scope.todos = todosInLocalStorage || [];
 	$scope.todos = todoService.getTodos();
@@ -26,4 +26,4 @@ mytodoAppCtrls.controller('MainCtrl',function($scope,localStorageService,todoSer
 	$scope.removeTodo = function(index){
 		todoService.removeTodoAtIndex($scope.todos,index);
 	};
-});
+}]);
