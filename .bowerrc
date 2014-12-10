@@ -1,3 +1,6 @@
 {
-  "directory": "bower_components"
+  "directory": "bower_components",
+  "proxy":"http://290571:iiii-0000@proxy.cognizant.com:6050",
+  "https-proxy":"http://290571:iiii-0000@proxy.cognizant.com:6050",
+  "strict-ssl":false
 }
